@@ -1,3 +1,4 @@
+
 {
     "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
@@ -946,8 +947,8 @@
             "properties": {
                 "model": {
                     "format": "OpenAI",
-                    "name": "gpt-35-turbo",
-                    "version": "0301"
+                    "name": "gpt-4",
+                    "version": "0613"
                 },
                 "scaleSettings": {
                     "scaleType": "Standard"
