@@ -583,20 +583,20 @@
       {
         "type": "Microsoft.CognitiveServices/accounts/deployments",
         "apiVersion": "2024-10-01",
-        "name": "[concat(parameters('openaiName'), '/gpt-35-turbo')]",
+        "name": "[concat(parameters('openaiName'), '/gpt-4.1-mini')]",
         "dependsOn": [
           "[resourceId('Microsoft.CognitiveServices/accounts', parameters('openaiName'))]",
           "[resourceId('Microsoft.CognitiveServices/accounts/deployments', parameters('openaiName'), 'text-embedding-ada-002')]"
         ],
         "sku": {
-            "name": "Standard",
+            "name": "GlobalStandard",
             "capacity": 30
         },
         "properties": {
           "model": {
             "format": "OpenAI",
-            "name": "gpt-35-turbo",
-            "version": "0125"
+            "name": "gpt-4.1-mini",
+            "version": "2025-04-14"
           },
           "versionUpgradeOption": "OnceNewDefaultVersionAvailable",
           "currentCapacity": 30,
